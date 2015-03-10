@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.598</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
+  <securityRealm class="hudson.security.SecurityRealm$None"/>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <jdks>
+    <jdk>
+      <name>Java 1.7</name>
+      <home>C:\Program Files\Java\jdk1.7.0_40\</home>
+      <properties/>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.26">
+      <name>ec2-us-east-1</name>
+      <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
+      <accessId>AKIAJSNBZWZQ2AGNLS3Q</accessId>
+      <secretKey>m8RVIARjoBg0nOn4Xd8jG3tjGbOIkZ7PkAN2CAi8gcty32qpxlmxCiGKVuf/3Ggfxqxc/psGvap9fVGiUtxfvg==</secretKey>
+      <privateKey>
+        <privateKey>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</privateKey>
+      </privateKey>
+      <instanceCap>2147483647</instanceCap>
+      <templates>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-9a562df2</ami>
+          <description>Project Pipeline</description>
+          <zone>us-east-1c</zone>
+          <securityGroups>team-devops</securityGroups>
+          <remoteFS>C:\Users\Mohit</remoteFS>
+          <type>T2Micro</type>
+          <labels>Project</labels>
+          <mode>NORMAL</mode>
+          <initScript>export JAVA=&quot;/usr/bin/java&quot;
+if [ ! -x &quot;$JAVA&quot; ]; then
+sudo apt-get update
+sleep 10
+sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java libcups2 libcups2 libjpeg8 icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk
+fi
+</initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors>1</numExecutors>
+          <remoteAdmin>Mohit</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId></subnetId>
+          <idleTerminationMinutes>30</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>false</stopOnTerminate>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>false</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.WindowsData">
+            <password></password>
+            <useHTTPS>false</useHTTPS>
+            <bootDelay></bootDelay>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+        </hudson.plugins.ec2.SlaveTemplate>
+      </templates>
+      <region>us-east-1</region>
+    </hudson.plugins.ec2.EC2Cloud>
+  </clouds>
+  <slaves/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <label></label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>
