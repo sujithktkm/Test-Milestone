@@ -26,7 +26,7 @@ In the coverage report section of the job, we observed the coverage report obtai
 
 ![image1](/screenshots/SS1.jpg)
 ![image2](/screenshots/SS2.jpg)
-![image3](/screenshots/SS3.jpg)
+![image3](/screenshots/task2.jpg)
 ![image4](/screenshots/SS4.jpg)
 ![image10](/screenshots/SS10.jpg)
 ![image11](/screenshots/SS11.jpg)
