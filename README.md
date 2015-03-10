@@ -20,6 +20,10 @@ In the coverage report section of the job, we observed the coverage report obtai
 ![image2](/screenshots/SS2.jpg)
 ![image3](/screenshots/SS3.jpg)
 ![image4](/screenshots/SS4.jpg)
+![image10](/screenshots/SS10.jpg)
+![image11](/screenshots/SS11.jpg)
+
+To run the test cases, we used JUnit plugin. We installed JUnit plugin from the Jenkins dashboard, configured it in the job configurations and it helps to run the test cases on the given project. 
 
 #####Task 2 : The ability to improve testing coverage using one of the techniques covered in class: constraint-based test generation, fuzzing, etc. You can use an existing tool or implement your own approach.
 
