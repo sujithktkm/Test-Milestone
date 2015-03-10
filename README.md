@@ -12,14 +12,15 @@ To measure coverage, we made use of [Cobertura] plugin. This plugin helps in mea
 To use this plugin, 
 - We installed it using the manage plugins tab in Jenkins Configurations Dashboard. 
 - Configured Build Step in our project, to use maven script
-- 
-- ```sh
-- cobertura:cobertura -Dcobertura.report.format=xml to use Cobertura.
-- ```
+
+```sh
+cobertura:cobertura -Dcobertura.report.format=xml to use Cobertura.
+```
+
 - Published the results into files using a post build step - 
-- ```sh
-- **/target/site/cobertura/*.xml
-- ```
+```sh
+**/target/site/cobertura/*.xml
+```
 
 In the coverage report section of the job, we observed the coverage report obtained and it is classified into different metrics like classes, packages, lines, conditions, files and methods. And the report can be drilled into each sub folder in the project and to each file.
 
