@@ -7,12 +7,19 @@ For this milestone, we have used Jenkins Application and have configured it to w
 Breaking down the configurations made for each of the tasks,
 
 #####Task 1 : The ability to run unit tests, measure coverage, and report the results.
-For this task, we made use of [Cobertura] to measure coverage. This plugin helps in measuring code coverage using different metrics like classes, packages, lines, conditions, files and methods. 
+To measure coverage, we made use of [Cobertura] plugin. This plugin helps in measuring code coverage for different metrics like classes, packages, lines, conditions, files and methods. 
 
 To use this plugin, 
 - We installed it using the manage plugins tab in Jenkins Configurations Dashboard. 
-- Configured Build Step in our project, to use maven script cobertura:cobertura -Dcobertura.report.format=xml to use Cobertura.
-- Published the results into files using a post build step - **/target/site/cobertura/*.xml
+- Configured Build Step in our project, to use maven script
+- 
+- ```
+- cobertura:cobertura -Dcobertura.report.format=xml to use Cobertura.
+- ```
+- Published the results into files using a post build step - 
+- ```
+- **/target/site/cobertura/*.xml
+- ```
 
 In the coverage report section of the job, we observed the coverage report obtained and it is classified into different metrics like classes, packages, lines, conditions, files and methods. And the report can be drilled into each sub folder in the project and to each file.
 
@@ -23,15 +30,22 @@ In the coverage report section of the job, we observed the coverage report obtai
 ![image10](/screenshots/SS10.jpg)
 ![image11](/screenshots/SS11.jpg)
 
-To run the test cases, we used [JUnit] plugin and made use of maven scrpits. We installed JUnit plugin from the Jenkins dashboard, configured it in the job configurations and it helps to run the test cases on the given project. Using maven command mvn test we ran the unit tests.
+To run the test cases, we used [JUnit] plugin and made use of maven scripts. We installed JUnit plugin from the Jenkins dashboard, configured it in the job configurations and it executed test cases using the Maven command
+```
+mvn test
+```
+
 
 To report the results, in the post build step, we configured cobertura and JUnit to obtain the reports as .xml files.
 
 #####Task 2 : The ability to improve testing coverage using one of the techniques covered in class: constraint-based test generation, fuzzing, etc. You can use an existing tool or implement your own approach.
 
-For Task 2, we used codepro eclipse plugin to improve generate new test cases and improve code coverage. Steps followed were - 
+For Task 2, we used codepro eclipse plugin to improve generate new test cases and improve code coverage. [Codepro]
+Employ the comprehensive automated software code quality and security analysis toolkit CodePro AnalytiX to automatically improve software quality, reliability, and maintainability in developer applications. CodePro AnalytiX includes functionality previously provided by EclipsePro Audit and EclipsePro Test.
+
+Steps followed were - 
 - Installed plugins codepro on eclipse.
-- Create a project and use this plug in to generate new test cases. Add this test cases to repository.
+- Create a project and use this plug in to generate new test cases. Add these test cases to repository.
 - The increment in the code coverage is visible in the below images.
 
 
@@ -45,7 +59,7 @@ We compared the test coverage obtained before and after addind the test cases ge
 
 For Task 3, we used [FindBugs] to perform static analysis on source code.
 
-Steps invovled are
+Steps involved are
 - Installed FindBugs plugin and configured it as per project requirements.
 - Added a build step in the job for Findbugs to work on the project
 - Added a post build step to record the results in a .xml file
@@ -60,8 +74,10 @@ To implement a new analysis - we used the sample code available at http://users.
 
 This code helps to find out code to comment ratio.
 
-TO perform this task, we created a jar using this plug and added a dependency in our Maven project.
-This code executes and identifies the code to comment ratio. As we have added a git hook for pre commit, the build is triggered and for each build, this ratio is identifies.
+To perform this task, we created a jar using the code available at the above link and added a dependency in our Maven project.
+This code executes and identifies the code to comment ratio. As we have added a git hook for pre commit, the build is triggered and for each build, this ratio is identified.
+The below image shows the number of comments line as well as the number of code lines in the project. Then it displays the ratio.
+
 ![image93](/screenshots/task4.jpg)
 
 
@@ -82,3 +98,4 @@ Findbugs
 [Cobertura]: https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
 [JUnit]: https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin
 [Findbugs] : https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+Plugin
+[Codepro] : https://developers.google.com/java-dev-tools/download-codepro
