@@ -68,10 +68,16 @@ This code executes and identifies the code to comment ratio. As we have added a 
 #####Task 5 : The ability to reject a commit if it fails a minimum testing criteria and analysis criteria
 
 We have added threshold limits to Jenkins findbugs and cobertura plugins to reject a commit if it doesn't par the given thresholds and to accept the commit if they are above the same.
+The values can be set in the post build step under advanced actions for each of them. Both have options to add values for unstable and reject builds.
+For cobertura, we need to check the fail unstable/ unhealthy build checkbox.
 
-![image12](/screenshots/SS12.jpg)
-![image13](/screenshots/SS13.jpg)
-![image14](/screenshots/SS14.jpg)
+Cobertura
+![image12](/screenshots/task5-1.jpg)
+![image13](/screenshots/task5-2.jpg)
+
+Findbugs
+![image14](/screenshots/task5-3.jpg)
+![image14](/screenshots/task5-4.jpg)
 
 [Cobertura]: https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
 [JUnit]: https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin
