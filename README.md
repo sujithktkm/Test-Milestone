@@ -98,5 +98,5 @@ Findbugs
 
 [Cobertura]: https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
 [JUnit]: https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin
-[Findbugs] : https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+Plugin
-[Codepro] : https://developers.google.com/java-dev-tools/download-codepro
+[FindBugs]: https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+Plugin
+[Codepro]: https://developers.google.com/java-dev-tools/download-codepro
