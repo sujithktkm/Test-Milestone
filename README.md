@@ -13,11 +13,11 @@ To use this plugin,
 - We installed it using the manage plugins tab in Jenkins Configurations Dashboard. 
 - Configured Build Step in our project, to use maven script
 - 
-- ```
+- ```sh
 - cobertura:cobertura -Dcobertura.report.format=xml to use Cobertura.
 - ```
 - Published the results into files using a post build step - 
-- ```
+- ```sh
 - **/target/site/cobertura/*.xml
 - ```
 
@@ -31,7 +31,7 @@ In the coverage report section of the job, we observed the coverage report obtai
 ![image11](/screenshots/SS11.jpg)
 
 To run the test cases, we used [JUnit] plugin and made use of maven scripts. We installed JUnit plugin from the Jenkins dashboard, configured it in the job configurations and it executed test cases using the Maven command
-```
+```sh
 mvn test
 ```
 
