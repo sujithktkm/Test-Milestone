@@ -55,5 +55,10 @@ Steps invovled are
 
 #####Task 5 : The ability to reject a commit if it fails a minimum testing criteria and analysis criteria
 
+We have added threshold limits to Jenkins findbugs and cobertura plugins to reject a commit if it doesn't par the given thresholds and to accept the commit if they are above the same.
+
+![image12](/screenshots/SS12.jpg)
+![image13](/screenshots/SS13.jpg)
+
 [Cobertura]: https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
 
