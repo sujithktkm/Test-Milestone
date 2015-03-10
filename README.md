@@ -26,7 +26,7 @@ In the coverage report section of the job, we observed the coverage report obtai
 
 ![image1](/screenshots/SS1.jpg)
 ![image2](/screenshots/SS2.jpg)
-![image3](/screenshots/task2.jpg)
+
 ![image4](/screenshots/SS4.jpg)
 ![image10](/screenshots/SS10.jpg)
 ![image11](/screenshots/SS11.jpg)
@@ -35,10 +35,10 @@ To run the test cases, we used [JUnit] plugin and made use of maven scripts. We 
 ```sh
 mvn test
 ```
-
+![image3](/screenshots/task2.jpg)
 
 To report the results, in the post build step, we configured cobertura and JUnit to obtain the reports as .xml files.
-
+![image4](/screenshots/task2-2.jpg)
 #####Task 2 : The ability to improve testing coverage using one of the techniques covered in class: constraint-based test generation, fuzzing, etc. You can use an existing tool or implement your own approach.
 
 For Task 2, we used codepro eclipse plugin to improve generate new test cases and improve code coverage. [Codepro]
