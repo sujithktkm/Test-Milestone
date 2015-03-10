@@ -65,4 +65,4 @@ We have added threshold limits to Jenkins findbugs and cobertura plugins to reje
 
 [Cobertura]: https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
 [JUnit]: https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin
-[Findbugs] : https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+Plugin
+[FindBugs]: https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+Plugin
