@@ -7,7 +7,7 @@ For this milestone, we have used Jenkins Application and have configured it to w
 Breaking down the configurations made for each of the tasks,
 
 #####Task 1 : The ability to run unit tests, measure coverage, and report the results.
-For this task, we made use of [Cobertura]. This plugin helps in measuring code coverage using different metrics like classes, packages, lines, conditions, files and methods. 
+For this task, we made use of [Cobertura] to measure coverage. This plugin helps in measuring code coverage using different metrics like classes, packages, lines, conditions, files and methods. 
 
 To use this plugin, 
 - We installed it using the manage plugins tab in Jenkins Configurations Dashboard. 
@@ -23,7 +23,9 @@ In the coverage report section of the job, we observed the coverage report obtai
 ![image10](/screenshots/SS10.jpg)
 ![image11](/screenshots/SS11.jpg)
 
-To run the test cases, we used JUnit plugin. We installed JUnit plugin from the Jenkins dashboard, configured it in the job configurations and it helps to run the test cases on the given project. 
+To run the test cases, we used [JUnit] plugin and made use of maven scrpits. We installed JUnit plugin from the Jenkins dashboard, configured it in the job configurations and it helps to run the test cases on the given project. Using maven command mvn test we ran the unit tests.
+
+To report the results, in the post build step, we configured cobertura and JUnit to obtain the reports as .xml files.
 
 #####Task 2 : The ability to improve testing coverage using one of the techniques covered in class: constraint-based test generation, fuzzing, etc. You can use an existing tool or implement your own approach.
 
@@ -39,7 +41,7 @@ We compared the test coverage obtained before and after addind the TestLink plug
 
 #####Task 3 : The ability to run an existing static analysis tool on the source code, process its results, and report its findings.
 
-For Task 3, we used FindBugs to perform static analysis on source code.
+For Task 3, we used [FindBugs] to perform static analysis on source code.
 
 Steps invovled are
 - Installed FindBugs plugin and configured it as per project requirements.
@@ -59,6 +61,8 @@ We have added threshold limits to Jenkins findbugs and cobertura plugins to reje
 
 ![image12](/screenshots/SS12.jpg)
 ![image13](/screenshots/SS13.jpg)
+![image14](/screenshots/SS14.jpg)
 
 [Cobertura]: https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin
-
+[JUnit]: https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin
+[Findbugs] : https://wiki.jenkins-ci.org/display/JENKINS/FindBugs+Plugin
